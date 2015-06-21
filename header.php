@@ -39,10 +39,7 @@ ini_set('display_errors', '1');
 
     <header class="masthead">
       <div class="masthead-inner" align="center">  	      	
-		<h2><a href="http://containers.apievangelist.com">{"API":"101"}</a></h2>      		
-    	<a href="http://bit.ly/1cHBhd5" target="_blank">
-    		<img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/3scale/Winning-in-the-API-Economy-eBook-3scale.png" width="50%" style="border: 1px solid #FFF; margin-bottom: 25px;" />
-    	</a>                   	      	
+		<h2><a href="http://containers.apievangelist.com">{"API":"101"}</a></h2>      		                 	      	
         <div class="colophon">
           <ul class="colophon-links">
             <li>
@@ -80,7 +77,9 @@ ini_set('display_errors', '1');
                   }				
                }  
                ?>            
-            
+            <li>
+              <a href="/editor.php">Editor</a>
+            </li>             
             <li style="padding-top: 15px;">
               <a href="http://apievangelist.com"><< Return to API Evangelist</a>
             </li>                                                                       
