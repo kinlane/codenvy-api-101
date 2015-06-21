@@ -46,13 +46,16 @@ if(is_array($ObjectResult))
 	    {
 		 $name = $include['name'];
 		 $slug = str_replace(" ","-",$name);
+		 $slug = strtolower($slug);
 		 $url = $include['url'];
-		 ?><li><a href="/<?php echo $slug; ?>/"><?php echo $name; ?></a></li><?php
+		 ?><li><a href="/<?php echo $slug; ?>/"><?php echo $name; ?></a> - View the API details for the <?php echo $name; ?> platform.</li><?php
 		}
 		?>
 	  </ul>
 	  <?php				
 	}  
-
+	?>
+	<p>This is all still work in progress for me. I am still trying to find the right balance of resources to provider across all aggregated APIs, and provide a caching mechanism.</p>
+	<?php
 include "footer.php";
 ?>
