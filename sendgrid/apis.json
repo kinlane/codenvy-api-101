@@ -1,0 +1,138 @@
+
+{
+	"name": "SendGrid",
+	"description": "SendGrid is a cloud-based email service that delivers email on behalf of companies to increase deliverability and improve customer communications integration with new or existing email systems is done via SMTP or through a REST API, providing metrics on outgoing email, and handles unsubscribe links, abiding by anti-spam regulations.",
+	"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/142_logo.png",
+	"tags": ["email",
+	"messaging"],
+	"created": "2015-06-20",
+	"modified": "2015-06-20",
+	"url": "http://theapistack.com/sendgrid/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [{
+		"name": "SendGrid",
+		"description": "SendGrid is a cloud-based email service that delivers email on behalf of companies to increase deliverability and improve customer communications integration with new or existing email systems is done via SMTP or through a REST API, providing metrics on outgoing email, and handles unsubscribe links, abiding by anti-spam regulations.",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/142_logo.png",
+		"humanURL": "https://sendgrid.com/",
+		"baseURL": "https://sendgrid.com/",
+		"tags": ["email",
+		"messaging"],
+		"properties": [{
+			"type": "X-net-library",
+			"url": "https://sendgrid.com/docs/Code_Examples/csharp.html"
+		},
+		{
+			"type": "X-blog",
+			"url": "http://blog.sendgrid.com/"
+		},
+		{
+			"type": "X-blog-rss-feed",
+			"url": "http://feeds.feedburner.com/sendgrid/CDXr"
+		},
+		{
+			"type": "X-contact-form",
+			"url": "https://sendgrid.com/contact"
+		},
+		{
+			"type": "X-portal",
+			"url": "https://sendgrid.com/developers"
+		},
+		{
+			"type": "X-documentation",
+			"url": "https://sendgrid.com/docs/index.html"
+		},
+		{
+			"type": "X-forum",
+			"url": "http://support.sendgrid.com/forums"
+		},
+		{
+			"type": "X-github",
+			"url": "https://github.com/sendgrid"
+		},
+		{
+			"type": "X-ios-sdk",
+			"url": "https://sendgrid.com/docs/Code_Examples/ios.html"
+		},
+		{
+			"type": "X-java-library",
+			"url": "https://sendgrid.com/docs/Code_Examples/java.html"
+		},
+		{
+			"type": "X-labs",
+			"url": "http://labs.sendgrid.com/"
+		},
+		{
+			"type": "X-nodejs-library",
+			"url": "https://sendgrid.com/docs/Code_Examples/nodejs.html"
+		},
+		{
+			"type": "X-perl-library",
+			"url": "https://sendgrid.com/docs/Code_Examples/perl.html"
+		},
+		{
+			"type": "X-php-library",
+			"url": "https://sendgrid.com/docs/Code_Examples/php.html"
+		},
+		{
+			"type": "X-pricing",
+			"url": "https://sendgrid.com/transactional-email/pricing"
+		},
+		{
+			"type": "X-privacy-policy",
+			"url": "https://sendgrid.com/privacy"
+		},
+		{
+			"type": "X-python-library",
+			"url": "https://sendgrid.com/docs/Code_Examples/python.html"
+		},
+		{
+			"type": "X-ruby-library",
+			"url": "https://sendgrid.com/docs/Code_Examples/ruby.html"
+		},
+		{
+			"type": "X-security-overview",
+			"url": "https://sendgrid.com/security"
+		},
+		{
+			"type": "X-selfservice-registration",
+			"url": "https://sendgrid.com/user/signup"
+		},
+		{
+			"type": "X-terms-of-service",
+			"url": "https://sendgrid.com/tos"
+		},
+		{
+			"type": "X-twitter",
+			"url": "https://twitter.com/SendGrid"
+		},
+		{
+			"type": "X-webinars",
+			"url": "https://sendgrid.com/"
+		}],
+		"contact": [{
+			"FN": "SendGrid",
+			"X-twitter": "https://twitter.com/SendGrid"
+		}]
+	},
+	{
+		"name": "SendGrid Web API",
+		"description": "",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/142_logo.png",
+		"humanURL": "https://sendgrid.com/docs/API_Reference/Web_API/index.html",
+		"baseURL": "https://sendgrid.com/",
+		"properties": [{
+			"type": "Swagger",
+			"url": "http://theapistack.com/data/sendgrid/sendgrid-web-api-swagger.json"
+		}],
+		"contact": [{
+			"FN": "SendGrid",
+			"X-twitter": "https://twitter.com/SendGrid"
+		}]
+	}],
+	"include": [],
+	"maintainers": [{
+		"FN": "Kin",
+		"X-twitter": "apievangelist",
+		"email": "kin@email.com"
+	}]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "API 101",
+  "description": "This is an APIs.json API 101 menu, that uses the cloud IDE platform to help you learn about some of teh commonly used APIs available today.",
+  "image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-api-101.png",
+  "tags": [
+    "messaging",
+    "social"
+  ],
+  "created": "2015-06-20",
+  "modified": "2015-06-20",
+  "url": "http://codenvy-api-101.apievangelist.com/apis.json",
+  "specificationVersion": "0.14",
+  "apis": [],
+  "include": [
+    {
+      "name": "Twitter",
+      "url": "/twitter/apis.json"
+    },
+    {
+      "name": "Twilio",
+      "url": "/twilio/apis.json"
+    },
+    {
+      "name": "Sendgrid",
+      "url": "/sendgrid/apis.json"
+    }
+  ],
+  "maintainers": [
+    {
+      "FN": "Kin",
+      "X-twitter": "apievangelist",
+      "email": "kin@email.com"
+    }
+  ]
+}
