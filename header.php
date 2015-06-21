@@ -52,7 +52,7 @@ ini_set('display_errors', '1');
             <?php
             $filename = $_SERVER['SCRIPT_FILENAME'];
             $folderArray = explode("/",$filename);
-            //echo count($folderArray) . "<br />";
+            echo count($folderArray) . "<br />";
 				if(count($folderArray)==5)
 					{
 					$apisjsonurl = "apis.json";
