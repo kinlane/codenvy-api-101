@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
-$ThisFile = fopen("apis.json", "r");
+$ThisFile = fopen("/apis.json", "r");
 $ObjectText =  fread($ThisFile,filesize("apis.json"));
 $ObjectResult = json_decode($ObjectText,true);
 ?>
