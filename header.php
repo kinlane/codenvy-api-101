@@ -41,12 +41,19 @@ ini_set('display_errors', '1');
       <div class="masthead-inner" align="center">  	      	
 		<h2><a href="http://containers.apievangelist.com">{"API":"101"}</a></h2>      		                 	      	
         <div class="colophon">
+          <br />
           <ul class="colophon-links">
             <li>
               <a href="/">Home</a>
-            </li> 
+            </li>
+          </ul>
+          <br />
+          <ul class="colophon-links">
             <?php
-				if($_SERVER['REQUEST_URI'] == "/")
+            $filename = $_SERVER['SCRIPT_FILENAME'];
+            $folderArray = explode("/",$filename);
+            //echo count($folderArray) . "<br />";
+				if(count($folderArray)==5)
 					{
 					$apisjsonurl = "apis.json";
 					}
@@ -76,10 +83,16 @@ ini_set('display_errors', '1');
             		<?php
                   }				
                }  
-               ?>            
+               ?> 
+          </ul>
+          <br />
+          <ul class="colophon-links">  
             <li>
               <a href="/editor.php">Editor</a>
-            </li>             
+            </li>  
+           </ul> 
+          <br /><br />
+           <ul class="colophon-links">
             <li style="padding-top: 15px;">
               <a href="http://apievangelist.com"><< Return to API Evangelist</a>
             </li>                                                                       
