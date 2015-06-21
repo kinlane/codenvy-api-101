@@ -45,9 +45,10 @@ if(is_array($ObjectResult))
 	<?php
 	 foreach($includes as $include)
 	    {
-		$name = $include['name'];
-		$url = $include['url'];
-		 ?><li><a href="<?php echo $url; ?>"<?php echo $name; ?></a></li><?php
+		 $name = $include['name'];
+		 $slug = str_replace(" ","-",$name);
+		 $url = $include['url'];
+		 ?><li><a href="/<?php echo $slug; ?>/"><?php echo $name; ?></a></li><?php
 		}
 		?>
 	  </ul>

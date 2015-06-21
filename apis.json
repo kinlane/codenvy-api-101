@@ -14,15 +14,15 @@
   "include": [
     {
       "name": "Twitter",
-      "url": "/twitter/apis.json"
+      "url": "http://codenvy-api-101.apievangelist.com/twitter/apis.json"
     },
     {
       "name": "Twilio",
-      "url": "/twilio/apis.json"
+      "url": "http://codenvy-api-101.apievangelist.com/twilio/apis.json"
     },
     {
       "name": "Sendgrid",
-      "url": "/sendgrid/apis.json"
+      "url": "http://codenvy-api-101.apievangelist.com/sendgrid/apis.json"
     }
   ],
   "maintainers": [
