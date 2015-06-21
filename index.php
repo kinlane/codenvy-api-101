@@ -40,7 +40,7 @@ if(is_array($ObjectResult))
 	echo '' . $description . '</p>';
 
 	?>
-	<p><strong><?php echo $SwaggerInfo_Title; ?></strong></p>
+	<p><strong><?php echo $name; ?></strong></p>
 	<ul>            
 	<?php
 	 foreach($includes as $include)
