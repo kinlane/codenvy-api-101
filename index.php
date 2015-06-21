@@ -33,14 +33,13 @@ if(is_array($ObjectResult))
 		$url = $ObjectResult['url'];  // add as APIs.json - Authoritative
 		}
 
-	$includes = $ObjectResult['includes'];
+	$includes = $ObjectResult['include'];
 	
 	echo '<p><img src="' . $image . '" width="100" align="right" /></p>';
 	echo '<p><strong>' . $name . '</strong><br />';
 	echo '' . $description . '</p>';
 
 	?>
-	<p><strong><?php echo $name; ?></strong></p>
 	<ul>            
 	<?php
 	 foreach($includes as $include)
