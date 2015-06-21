@@ -53,13 +53,23 @@ ini_set('display_errors', '1');
             $filename = $_SERVER['SCRIPT_FILENAME'];
             $folderArray = explode("/",$filename);
             echo count($folderArray) . "<br />";
-				if(count($folderArray)==5)
+            echo $_SERVER['HTTP_HOST'] . "<br />";
+            if($_SERVER['HTTP_HOST']=='codenvy-api-101.apievangelist.com')
+              	{
+               $break = 7;  
+               }
+				else
+    				{
+        			$break = 5;
+      			}
+      		echo $break . "<br />";
+				if(count($folderArray) > $break)
 					{
-					$apisjsonurl = "apis.json";
+					$apisjsonurl = "../apis.json";
 					}
 				else
 					{
-					$apisjsonurl = "../apis.json";
+					$apisjsonurl = "apis.json";
 					}
 				//echo $apisjsonurl;
 
@@ -139,3 +149,4 @@ ini_set('display_errors', '1');
     	</p>
     	
       	<div class="page">
+          <?php //var_dump($_SERVER); ?>
