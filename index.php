@@ -2,12 +2,6 @@
 
 include "header.php";
 
-
-$ThisFile = fopen("apis.json", "r");
-$ObjectText =  fread($ThisFile,filesize("apis.json"));
-
-$ObjectResult = json_decode($ObjectText,true);
-
 if(is_array($ObjectResult))
   {
 
@@ -35,7 +29,7 @@ if(is_array($ObjectResult))
 
 	$includes = $ObjectResult['include'];
 	
-	echo '<p><img src="' . $image . '" width="100" align="right" /></p>';
+	echo '<p><img style="padding: 15px;" src="' . $image . '" width="225" align="right" /></p>';
 	echo '<p><strong>' . $name . '</strong><br />';
 	echo '' . $description . '</p>';
 
@@ -56,6 +50,7 @@ if(is_array($ObjectResult))
 	}  
 	?>
 	<p>This is all still work in progress for me. I am still trying to find the right balance of resources to provider across all aggregated APIs, and provide a caching mechanism.</p>
+	<p>If there are any APIs you think should be in the 101 stack, or would like to know more about these Codenvy menus, ping me at <a href="https://twitter.com/kinlane/">@twitter</a>.</p>
 	<?php
 include "footer.php";
 ?>

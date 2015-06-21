@@ -1,6 +1,10 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
+
+$ThisFile = fopen("apis.json", "r");
+$ObjectText =  fread($ThisFile,filesize("apis.json"));
+$ObjectResult = json_decode($ObjectText,true);
 ?>
 
 <!DOCTYPE html>
@@ -48,6 +52,25 @@ ini_set('display_errors', '1');
             <li>
               <a href="/">Home</a>
             </li> 
+            <?php
+            if(is_array($ObjectResult))
+              {
+              $includes = $ObjectResult['include'];
+              foreach($includes as $include)
+              		{
+                   $name = $include['name'];
+                   $slug = str_replace(" ","-",$name);
+                   $slug = strtolower($slug);
+                   $url = $include['url'];
+                  ?>
+                  <li>
+                    <a href="/<?php echo $slug; ?>"><?php echo $name; ?></a>
+                  </li>            
+            		<?php
+                  }				
+               }  
+               ?>            
+            
             <li style="padding-top: 15px;">
               <a href="http://apievangelist.com"><< Return to API Evangelist</a>
             </li>                                                                       
