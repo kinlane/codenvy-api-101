@@ -52,8 +52,6 @@ ini_set('display_errors', '1');
             <?php
             $filename = $_SERVER['SCRIPT_FILENAME'];
             $folderArray = explode("/",$filename);
-            echo count($folderArray) . "<br />";
-            echo $_SERVER['HTTP_HOST'] . "<br />";
             if($_SERVER['HTTP_HOST']=='codenvy-api-101.apievangelist.com')
               	{
                $break = 7;  
@@ -62,7 +60,7 @@ ini_set('display_errors', '1');
     				{
         			$break = 5;
       			}
-      		echo $break . "<br />";
+      		
 				if(count($folderArray) > $break)
 					{
 					$apisjsonurl = "../apis.json";
