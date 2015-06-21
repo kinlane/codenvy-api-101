@@ -1,10 +1,6 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
-
-$ThisFile = fopen("/apis.json", "r");
-$ObjectText =  fread($ThisFile,filesize("apis.json"));
-$ObjectResult = json_decode($ObjectText,true);
 ?>
 
 <!DOCTYPE html>
@@ -53,6 +49,20 @@ $ObjectResult = json_decode($ObjectText,true);
               <a href="/">Home</a>
             </li> 
             <?php
+				if($_SERVER['REQUEST_URI'] == "/")
+					{
+					$apisjsonurl = "apis.json";
+					}
+				else
+					{
+					$apisjsonurl = "../apis.json";
+					}
+				//echo $apisjsonurl;
+
+            $ThisFile = fopen($apisjsonurl,"r");
+            $ObjectText =  fread($ThisFile,filesize("apis.json"));
+            $ObjectResult = json_decode($ObjectText,true);
+
             if(is_array($ObjectResult))
               {
               $includes = $ObjectResult['include'];
@@ -117,5 +127,3 @@ $ObjectResult = json_decode($ObjectText,true);
     	</p>
     	
       	<div class="page">
-
-      

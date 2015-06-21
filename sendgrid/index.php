@@ -1,6 +1,6 @@
 <?php
 
-include "header.php";
+include "../header.php";
 
 
 $ThisFile = fopen("apis.json", "r");
@@ -259,5 +259,5 @@ if(is_array($ObjectResult))
 		}
 	}  
 
-include "footer.php";
+include "../footer.php";
 ?>
